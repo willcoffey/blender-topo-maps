@@ -2,11 +2,26 @@ Purpose of this repo is to create a method for making topographical, 3D printabl
 
 # Initial process
 
+```
+ProductName:		macOS
+ProductVersion:		14.5
+BuildVersion:		23F79
+
+Version: ImageMagick 7.1.1-38 Q16-HDRI aarch64 22398 https://imagemagick.org
+Copyright: (C) 1999 ImageMagick Studio LLC
+License: https://imagemagick.org/script/license.php
+Features: Cipher DPC HDRI Modules OpenMP(5.0) 
+Delegates (built-in): bzlib fontconfig freetype gslib heic jng jp2 jpeg jxl lcms lqr ltdl lzma openexr png ps raw tiff webp xml zlib zstd
+Compiler: gcc (4.2)
+
+Blender 4.2.2 LTS
+```
+
 ## Image Processing
 - Download height data as `.tif` tiles. They also have point cloud data that could be interesting 
   but I didn't look at.
     [MassGIS Data Lidar Terrain Data](https://www.mass.gov/info-details/massgis-data-lidar-terrain-data)
-  They will likely look all white, either do to 32-bit floats not being supported in many viewers, 
+  They will likely look all white, either due to 32-bit floats not being supported in many viewers, 
   or the info being shunted into the very light shades.
 
 - Rename files to get order correct for combining. For example: (this is partially a relic of when 
